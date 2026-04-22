@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Study Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Smart Study Tracker</h1>
+
+  <form id="taskForm">
+    <input type="text" id="title" placeholder="Task Title" required>
+    <input type="text" id="module" placeholder="Module" required>
+    <input type="date" id="deadline" required>
+    <button type="submit">Add Task</button>
+  </form>
+
+  <div>
+    <label>Filter by Module:</label>
+    <select id="moduleFilter">
+      <option value="all">All</option>
+    </select>
+
+    <label>Filter by Date:</label>
+    <input type="date" id="dateFilter">
+  </div>
+
+  <ul id="taskList"></ul>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
